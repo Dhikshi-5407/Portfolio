@@ -1,0 +1,543 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .role-text {
+  font-size: 2.5rem;   /* change this value as you like */
+}
+/* unwanted*/
+
+.tagline {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;   /* you can change 300–800 */
+  font-style: italic;
+  font-size: 1.2rem;  /* adjust size if needed */
+  letter-spacing: 1px;
+}
+
+    p {
+      max-width: 700px;
+      text-align: center;
+      line-height: 1.7;
+      opacity: 0.85;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* HOME */
+    #home {
+      background:    #0f0f0f;
+    
+  
+}
+
+/* font family*/
+   body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 48px;
+}
+
+
+    .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 50%;
+}
+.logo-container {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+    /* ABOUT (UPDATED) */
+    #about {
+      background: #0f0f0f;
+    }
+
+    .about-container {
+      max-width: 900px;
+      background: #151515;
+      padding: 40px;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    .about-container::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #7f5af0, #00c2ff, #2cb67d);
+      z-index: -1;
+    }
+
+    .about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #7f5af0, #00c2ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+    .about-text {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ccc;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .skills span {
+      background: #2a2a2a;
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
+
+    .quote {
+      text-align: center;
+      font-style: italic;
+      opacity: 0.8;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .contact-btn {
+      background: #7f5af0;
+      color: white;
+    }
+
+    /* PROJECTS */
+    #projects {
+      background: #101010;
+    }
+
+    .project-card {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* CONTACT */
+    #contact {
+      background:   #0f0f0f;
+    }
+
+    input, textarea {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+
+/* Contact Button Style */
+.contact-btn {
+  background: linear-gradient(135deg, #7f5af0, #00c2ff);
+  color: white;
+}
+/* Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+
+
+
+/* Card size */
+.flip-card {
+  width: 280px;
+  height: 220px;
+  perspective: 1000px;
+}
+
+/* Inner flip box */
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front + Back common */
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Front side */
+.flip-front {
+  background: #1c1c1c;
+}
+
+/* Back side */
+.flip-back {
+  background: #151515;
+  transform: rotateY(180deg);
+}
+
+h2.project-title {
+  font-family: "Great Vibes", cursive !important;
+}
+
+
+/* Buttons */
+.project-links a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  opacity: 0.8;
+}
+
+.project-title {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFDE42;
+  letter-spacing: 2px;
+}
+/* other styles above... */
+
+.flip-card {
+  width: 280px;
+  height: 220px;
+  perspective: 1000px;
+  position: relative;
+  border-radius: 15px;
+}
+
+/* Gradient glow border */
+.flip-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #00c2ff, #7f5af0, #00aaff);
+  z-index: -1;
+  filter: blur(6px);
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+/* stronger glow on hover */
+.flip-card:hover::before {
+  filter: blur(10px);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* Code button different color */
+.project-links a:last-child {
+  background: linear-gradient(135deg, #7f5af0, #00c2ff);
+  color: white;
+}
+
+.contact-links {
+  display: flex;
+  gap: 25px;              /* space between items */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: flex;
+  flex-direction: column;   /* puts text below image */
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.contact-links img {
+  width: 25px;
+  height: 25px;
+}
+
+
+
+
+
+.contact-links a:hover {
+  color: #0077b5; /* nice hover effect */
+}
+.contact-links img {
+  width: 55px;
+  height: 55px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #f5f5f5;
+}
+
+
+
+#contact input,
+#contact textarea,
+#contact button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;   /* centers + adds space */
+}
+
+#contact textarea {
+  margin-top: 25px;    /* pushes message box slightly down */
+}
+
+
+.contact-links a span {
+  color: grey;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover span {
+  color: white;
+}
+
+
+
+
+
+#contact input:first-of-type {
+  margin-top: 40px;   /* pushes entire form down */
+}
+
+
+
+/* summa*/
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 1;              /* IMPORTANT: remove dull effect */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #7f5af0;   /* elegant accent color */
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+/* summa card about*/
+.card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 194, 255, 0.15),
+              0 0 0 1px rgba(127, 90, 240, 0.3);
+}
+
+/* Optional glowing animated border effect */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(135deg, transparent, transparent);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.card:hover::after {
+  background: linear-gradient(135deg, #7f5af0, #00c2ff, #2cb67d);
+  opacity: 0.6;
+}
+
+.about-container {
+  position: relative;
+}
+
+
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(#7f5af0, #00c2ff);
+  transform: translateX(-50%);
+}
+
