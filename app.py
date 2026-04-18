@@ -1,42 +1,42 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from flask import Flask, request
 import smtplib
 
-app = FastAPI()
+app = Flask(__name__)
 
-# allow all websites (IMPORTANT for portfolio)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# 🔴 CHANGE THIS
+YOUR_EMAIL = "ssdhikshitha@gmail.com"
+APP_PASSWORD = "ller wszq tmqs mdej"
 
-class Message(BaseModel):
-    name: str
-    email: str
-    message: str
+@app.route("/")
+def home():
+    return "Backend is running"
 
-YOUR_EMAIL = "yourmail@gmail.com"
-APP_PASSWORD = "your_app_password"
-
-@app.post("/send")
-def send(msg: Message):
+@app.route("/send", methods=["POST"])
+def send():
+    name = request.form["name"]
+    email = request.form["email"]
+    message = request.form["message"]
 
     full_msg = f"""
-New Portfolio Message:
+New Message from Portfolio:
 
-Name: {msg.name}
-Email: {msg.email}
-Message: {msg.message}
+Name: {name}
+Email: {email}
+Message: {message}
 """
 
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login(YOUR_EMAIL, APP_PASSWORD)
-    server.sendmail(YOUR_EMAIL, YOUR_EMAIL, full_msg)
-    server.quit()
+    try:
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(YOUR_EMAIL, APP_PASSWORD)
+        server.sendmail(YOUR_EMAIL, YOUR_EMAIL, full_msg)
+        server.quit()
 
-    return {"success": True}
+        return "Message sent successfully!"
+
+    except Exception as e:
+        return f"Error sending email: {str(e)}"
+
+if __name__ == "__main__":
+    print("Server starting...")
+    app.run(debug=True)
