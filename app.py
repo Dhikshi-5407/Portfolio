@@ -4,6 +4,8 @@ import smtplib
 app = Flask(__name__)
 
 # 🔴 CHANGE THIS
+@app.post("/send")
+def send(msg: Message):
 YOUR_EMAIL = "ssdhikshitha@gmail.com"
 APP_PASSWORD = "ller wszq tmqs mdej"
 
