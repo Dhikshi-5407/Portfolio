@@ -220,12 +220,29 @@
 
   </div>
 
-  <form id="contact-form">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
+  <form class="contact-form" id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Your Message..."
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+          <p id="success-message" style="display: none; color: black">
+            Message sent successfully!
+          </p>
+        </div>
 </section>
 
 <script src="script.js"></script>
