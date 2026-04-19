@@ -9,7 +9,7 @@ app = FastAPI()
 # ✅ CORS (allow your frontend)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5500/index.html"],
+    allow_origins=["https://portfolio-pink-seven-2g4ax7bfr3.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
