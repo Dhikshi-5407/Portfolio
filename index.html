@@ -19,231 +19,202 @@
 <body>
 <nav>
   <a href="#home">Home</a>
-  
   <a href="#about">About</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="home">
-    <div class="logo">
-        <img src="_Logo (1).png" 
-     alt="Logo" 
-     style="width:450px; height:450px; object-fit:contain; mix-blend-mode: screen;">
+<!-- ══════ HOME ══════ -->
+  <section id="home">
+    <div class="home-logo">
+      <img src="nice.jpeg" alt="Dhikshitha Logo">
     </div>
-  <h2 class="role-text">Dhikshitha</h2>
-  <p class="role-text">UI/UX Designer</p>
-</section>
-
-<section id="about">
-  <div class="about-container">
-
-    <h1 class="about-title">About Me</h1>
-
-    <p class="about-text">
-      I am a Computer Science student passionate about creating meaningful digital experiences through UI/UX design.
-    </p>
-
-    <div class="education-section">
-<div class="card">
-  <h2>Education</h2>
-
-  <div class="edu-item">
-    <h3> → B.Sc Computer Science (Pursuing)</h3>
-    <p>SRM Institute of Science and Technology</p>
-  </div>
-
-  <div class="edu-item">
-    <h3> → Schooling Completed</h3>
-    <p>Velammal Vidyashram</p>
-  </div>
-
-</div>
-</div>
-
-    <div class="card">
-      <h2>Experience</h2>
-      <p><strong>Approtech Pvt. Ltd.</strong></p>
-      <ul>
-        <li>Worked in Full Stack Development</li>
-        <li>Improved user journey</li>
-      </ul>
+    <h1 class="home-title reveal"><span class="grad-text">Dhikshitha</span></h1>
+    <p class="home-role reveal">UI/UX Designer &amp; Developer</p>
+    <div class="home-cta reveal">
+      <a href="#about"   class="btn-primary">Explore Work</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
     </div>
-
-    <div class="card">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>C</span>
-        <span>C++</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Python</span>
-        <span>Java</span>
-        
-        
-      </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
-      <div class="card">
-       <h2>Database</h2>
-       <div class="skills">
-        <span>SQL</span>
-      </div>
-      </div>
-
-    <div class="card">
-      <h2>Design Tool</h2>
-      <div class="skills">
-        <span>Figma</span>
-        <span>Canva</span>
-        
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Technologies</h2>
-      <div class="skills">
-        <span>VS Code</span>
-        <span>Github</span>
-        
-      </div>
-    </div>
-
-
-    <div class="card quote">
-      “Great design is about solving problems and creating meaningful experiences.”
-    </div>
-
-    <div class="cta">
-      <h2>Let’s Build Something Meaningful Together</h2>
-      <a href="Dhikshitha.pdf" target="_blank" class="btn">View Resume</a>
-      
-</a>
-    </div>
-
-  </div>
-</section>
-
-
-
-    
-
-    <!-- BACK -->
-    <div class="flip-back">
-      <h2>Restaurant Menu Card</h2>
-      <p>A clean and visually appealing digital menu design that presents food items in an organized and user-friendly layout.</p>
-
-      <div class="project-links">
-        <a href="mini project/food.html" target="_blank">View Project</a>
-        <a href="https://github.com/Dhikshi-5407/mini-project" target="_blank">Code</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    <section id="projects">
-  <h1>Projects</h1>
-
-  <div class="projects-container">
-
-    <!-- Project 1 -->
-    <div class="flip-card">
-      <div class="flip-inner">
-
-        <!-- FRONT -->
-        <div class="flip-front">
-          <h2 class="project-title">Restaurant Menu Card</h2>
-         
+  </section>
+ 
+  <!-- ══════ ABOUT ══════ -->
+  <section id="about">
+    <div class="about-wrapper">
+      <div class="about-profile reveal">
+        <div class="about-avatar">D</div>
+        <h1>Dhikshitha</h1>
+        <p class="about-bio">Computer Science student passionate about creating meaningful digital experiences through UI/UX design.</p>
+        <div class="about-tags">
+          <span class="about-tag">UI/UX Design</span>
+          <span class="about-tag">Full Stack</span>
+          <span class="about-tag">Chennai, IN</span>
         </div>
-
-        <!-- BACK -->
-        <div class="flip-back">
-         
-          <p>A clean and visually appealing digital menu design that presents food items in an organized and user-friendly layout.</p>
-
-          <div class="project-links">
-            <a href="https://mini-project-coral-nu.vercel.app/" target="_blank">View Project</a>
-            <a href="https://github.com/Dhikshi-5407/mini-project" target="_blank">Code</a>
+      </div>
+      <div class="about-block reveal">
+        <p class="about-section-label">Education</p>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <span class="edu-badge pursuing">Pursuing</span>
+            <h3>B.Sc Computer Science</h3>
+            <p>SRM Institute of Science and Technology</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-badge completed">Completed</span>
+            <h3>Schooling</h3>
+            <p>Velammal Vidyashram</p>
           </div>
         </div>
+      </div>
+      <div class="about-block reveal">
+        <p class="about-section-label">Experience</p>
+        <div class="exp-card">
+          <div class="exp-card-header">
+            <span class="exp-company-name">Approtech Pvt. Ltd.</span>
+            <span class="exp-role-badge">Full Stack Dev</span>
+          </div>
+          <ul class="exp-list">
+            <li>Worked in full stack development</li>
+            <li>Improved user journey and experience</li>
+          </ul>
+        </div>
+      </div>
+      <!-- SKILLS -->
+  <section class="section">
+    <div class="section-label">Skills &amp; Tools</div>
 
+    <div class="skills-group">
+      <div class="skills-group-label">Languages</div>
+      <div class="chip-row">
+        <span class="chip chip-blue">C</span>
+        <span class="chip chip-blue">C++</span>
+        <span class="chip chip-blue">Python</span>
+        <span class="chip chip-blue">Java</span>
+        <span class="chip chip-blue">HTML</span>
+        <span class="chip chip-blue">CSS</span>
       </div>
     </div>
 
-    <!-- Project 2 -->
-    <div class="flip-card">
-      <div class="flip-inner">
+    <div class="skills-group">
+      <div class="skills-group-label">Database</div>
+      <div class="chip-row">
+        <span class="chip chip-amber">SQL</span>
+      </div>
+    </div>
 
-        <!-- FRONT -->
-        <div class="flip-front">
-          <h2 class="project-title">Gamozo</h2>
-        
+    <div class="skills-group">
+      <div class="skills-group-label">Design</div>
+      <div class="chip-row">
+        <span class="chip chip-green">Figma</span>
+        <span class="chip chip-green">Canva</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <div class="skills-group-label">Technologies</div>
+      <div class="chip-row">
+        <span class="chip">VS Code</span>
+        <span class="chip">GitHub</span>
+      </div>
+    </div>
+  </section>
+        <div class="about-cta-new">
+          <h2>Let's build something meaningful together</h2>
+          <a href="Dhikshitha.pdf" target="_blank" class="btn-primary">View Resume</a>
         </div>
-
-        <!-- BACK -->
-        <div class="flip-back">
-          
-          <p>A user-focused web application featuring modern UI design, smooth interactions, and an intuitive user experience.</p>
-
-          <div class="project-links">
-            <a href="https://gamozo.vercel.app/" target="_blank">View Project</a>
-            <a href="https://github.com/Santhana-Manikandan/Gamozo.git" target="_blank">Code</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ══════ PROJECTS ══════ -->
+  <section id="projects">
+    <div class="projects-wrapper">
+      <div class="section-header reveal">
+        <span class="section-tag">Work</span>
+        <h2>Selected <span class="grad-text">Projects</span></h2>
+        <p>A collection of things I've built — hover each card to see more.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="flip-card reveal">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="project-number">01 / Project</div>
+              <div class="project-title">Restaurant Menu Card</div>
+            </div>
+            <div class="flip-back">
+              <p>A clean and visually appealing digital menu design that presents food items in an organized and user-friendly layout.</p>
+              <div class="project-links">
+                <a href="https://mini-project-coral-nu.vercel.app/" target="_blank" class="link-view">View Project</a>
+                <a href="https://github.com/Dhikshi-5407/mini-project" target="_blank" class="link-code">Code</a>
+              </div>
+            </div>
           </div>
         </div>
-
+        <div class="flip-card reveal">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="project-number">02 / Project</div>
+              <div class="project-title">Gamozo</div>
+            </div>
+            <div class="flip-back">
+              <p>A user-focused web application featuring modern UI design, smooth interactions, and an intuitive user experience.</p>
+              <div class="project-links">
+                <a href="https://gamozo.vercel.app/" target="_blank" class="link-view">View Project</a>
+                <a href="https://github.com/Santhana-Manikandan/Gamozo.git" target="_blank" class="link-code">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-  </div>
-</section>
-</section>
-<section id="contact">
-  <h1>Contact</h1>
-  <div class="contact-links">
-
-    <!-- Email -->
-     <a href="https://mail.google.com/mail/u/0/#inbox">
-      <img src="Gmail, Email icon.jpeg" alt="Email">
-       <span>Email</span>
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/feed/" target="_blank">
-      <img src="105 Free Aesthetic Black App Icons For Your iPhone - The Clever Heart.jpeg">
-       <span>LinkedIn</span>
-    </a>
-    <!-- GitHub -->
-    <a href="https://github.com/" target="_blank">
-      <img src="Primer.jpeg" alt="GitHub">
-       <span>GitHub</span>
-    </a>
-
-  </div>
-
-  <form class="contact-form" id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-
-            <textarea
-              name="message"
-              placeholder="Your Message..."
-              rows="5"
-              required
-            ></textarea>
-
-            <button type="submit">Send Message</button>
-          </form>
-          <p id="success-message" style="display: none; color: black">
-            Message sent successfully!
-          </p>
+  </section>
+ <!-- ══════ CONTACT ══════ -->
+  <section id="contact">
+    <h1 class="reveal">Contact</h1>
+    <div class="contact-socials reveal">
+      <a href="https://mail.google.com/mail/u/0/#inbox" class="contact-social-item">
+        <div class="social-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
         </div>
-</section>
+        <span>Email</span>
+      </a>
+      <a href="https://www.linkedin.com/feed/" target="_blank" class="contact-social-item">
+        <div class="social-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </div>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/" target="_blank" class="contact-social-item">
+        <div class="social-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+        </div>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="contact-form-wrap reveal">
+      <form id="contact-form" onsubmit="handleSubmit(event)">
+        <input  type="text"  name="name"    placeholder="Your Name"       required />
+        <input  type="email" name="email"   placeholder="Your Email"      required />
+        <textarea            name="message" placeholder="Your Message..." rows="5"  required></textarea>
+        <button type="submit" class="contact-submit">Send Message</button>
+      </form>
+      <div id="success-msg">✓ Message sent successfully!</div>
+    </div>
+  </section>
+ 
 
 <script src="script.js"></script>
 </body>
