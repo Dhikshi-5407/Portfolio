@@ -831,6 +831,8 @@ nav a:hover { color: var(--white); }
   margin-top: 8px;
 }
 
+
+/* nothing*/
 /* ── 9. RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   :root { --section-pad: 80px 20px; }
