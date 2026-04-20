@@ -19,7 +19,7 @@ const sections = document.querySelectorAll('section');
 
 
 const form = document.getElementById("contact-form");
-const successMsg = document.getElementById("success-message");
+const successMsg = document.getElementById("success-msg");
 const button = form.querySelector("button");
 
 form.addEventListener("submit", async (e) => {
@@ -31,7 +31,7 @@ form.addEventListener("submit", async (e) => {
   const formData = new FormData(form);
 
   try {
-   const response = await fetch("https://dhikshitha.onrender.com", {
+   const response = await fetch("https://dhikshitha.onrender.com"/send-message, {
   method: "POST",
   body: formData
 });

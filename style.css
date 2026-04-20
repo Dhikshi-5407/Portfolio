@@ -848,6 +848,16 @@ nav a:hover { color: var(--white); }
   .exp-card-header { flex-direction: column; align-items: flex-start; }
 }
 
+/* ════════════ FOOTER ════════════ */
+    footer {
+      border-top: 0.5px solid var(--border);
+      padding: 26px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--bg);
+    }
+    footer p { font-size: 0.8rem; color: var(--dim); }
+    .footer-grad { font-size: 0.8rem; }
+
 @media (max-width: 480px) {
   nav { gap: 14px; }
   nav a { font-size: 0.8rem; }
